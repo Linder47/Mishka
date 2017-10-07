@@ -1,19 +1,19 @@
-var gulp = require("gulp"),
-less = require("gulp-less"),
-plumber = require("gulp-plumber"),
-postcss = require("gulp-postcss"),
-autoprefixer = require("autoprefixer"),
-server = require("browser-sync"),
-mqpacker = require("css-mqpacker"),
-minify = require("gulp-csso"),
-rename = require("gulp-rename"),
-imagemin = require("gulp-imagemin"),
-useref = require("gulp-useref"),
-uglify = require("gulp-uglify"),
-gulpIf = require("gulp-if"),
-cache = require("gulp-cache"),
-del = require('del'),
-run = require('run-sequence');
+var gulp = require("gulp");
+var less = require("gulp-less");
+var plumber = require("gulp-plumber");
+var postcss = require("gulp-postcss");
+var autoprefixer = require("autoprefixer");
+var server = require("browser-sync");
+var mqpacker = require("css-mqpacker");
+var minify = require("gulp-csso");
+var rename = require("gulp-rename");
+var imagemin = require("gulp-imagemin");
+var useref = require("gulp-useref");
+var uglify = require("gulp-uglify");
+var gulpIf = require("gulp-if");
+var cache = require("gulp-cache");
+var del = require('del');
+var run = require('run-sequence');
 
 gulp.task("style", function() {
     gulp.src("less/style.less")

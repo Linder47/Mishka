@@ -13,18 +13,35 @@
 
 <body>
 
-    <header class="page-header">
+    <header class="page-header  container">
         <div class="page-header__wrapper">
             <nav class="main-nav">
+                <button class="main-nav__toggle" type="button">Закрыть меню</button>
                 <ul class="main-nav__list">
-                    <li class="main-nav__item"></li>
-                    <li class="main-nav__item"><a href="#">Каталог товаров</a></li>
-                    <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
-                    <li class="main-nav__item"><a href="#">Поиск по сайту</a></li>
-                    <li class="main-nav__item"><a href="#">Корзина: пока пуста</a></li>
+                    <li class="main-nav__item  main-nav__item--logo">
+                        <picture>
+                            <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
+                            <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
+                            <img src="img/mishka-logo-mobile.svg" alt="Mishka">
+                        </picture>
+                    </li>
+                    <li class="main-nav__item  main-nav__item-li-catalog"><a class="main-nav__item--catalog-item" href="#"><b class="main-nav__item--catalog">Каталог товаров</b></a></li>
+                    <li class="main-nav__item  main-nav__item-li-order"><a href="#"><b class="main-nav__item--order">Вязание на заказ</b></a></li>
+                    <li class="main-nav__item  main-nav__item-li-search"><a class=" main-nav__item--search-item" href="#"><b class="main-nav__item--search">Поиск по сайту</b></a></li>
+                    <li class="main-nav__item  main-nav__item-li-basket"><a class=" main-nav__item--basket-item" href="#"><b class="main-nav__item--basket">Корзина: пока пуста</b></a></li>
                 </ul>
+                
+                <!--<button class="page-header__toggle" type="button">Закрыть/открыть меню</button>-->
             </nav>
-            <div class="page-header__logo"></div>
+            <p class="main-nav__text">Бесплатная доставка по России</p>
+            <div class="page-header__logo">
+                <button class="page-header__toggle" type="button">Закрыть/открыть меню</button>
+                <picture>
+                    <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
+                    <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
+                    <img src="img/mishka-logo-mobile.svg" alt="Mishka">
+                </picture>
+            </div>
         </div>
     </header>
 
@@ -88,7 +105,9 @@
                         подарочной упаковке</b>
             </div>
             <h2 class="about__title">Отзывы</h2>
-            <p class="about__text">Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке и мои фотографии сразу стали более стильнее, а также набирают больше лайков!</p>
+            <p class="about__text">Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек.
+                В отчаянии, я накупила аксессуаров и игрушек в Мишке и мои фотографии сразу стали более стильнее, а также
+                набирают больше лайков!</p>
             <p class="about__name">Анастасия Красильникова</p>
             <p class="about__mail">@misssssiskras</p>
             <div class="about__page-controller">
@@ -110,11 +129,9 @@
                     <td class="contacts__table-td">info@mimimishkashop.ru </td>
                 </tr>
                 <tr class="contacts__table-tr">
-                        <td class="contacts__table-td">адрес:</td>
-                        <td class="contacts__table-td">г. Санкт-Петербург,<br>
-                                ул. Большая Конюшенная, <br>
-                                д. 19/8, офис 101</td>
-                    </tr>
+                    <td class="contacts__table-td">адрес:</td>
+                    <td class="contacts__table-td">г. Санкт-Петербург,<br> ул. Большая Конюшенная, <br> д. 19/8, офис 101</td>
+                </tr>
             </table>
             <div class="map" id="map"></div>
             <button class="btn  btn--contacts">Напишите нам</button>
@@ -126,7 +143,7 @@
         <div class="page-footer__wrapper">
             <div class="page-footer__logo"></div>
             <div class="page-footer__social-links">
-                
+
             </div>
         </div>
         <div class="page-footer__hashtag">
