@@ -4,13 +4,17 @@
     padding: 0;
     width: 100%;
 
+    &__wrapper {
+        position: relative;
+    }
+
     &__logo {
         position: relative;
         display: flex;
         height: 80px;
-        background-color: #aae5ff;
-        border-top: 1px solid #000;
-        border-bottom: 1px solid #3b37d0;
+        background-color: #fff;
+        border-top: 1px solid @color-border-main-nav;
+        border-bottom: 1px solid @color-border-main-nav;
         padding-top: 10px;
         box-sizing: border-box;
     }
@@ -33,7 +37,7 @@
         z-index: 4;
         outline: none;
         z-index: 4;
-        background-color: #dad;
+        background-color: transparent;
 
         &::after {
             content: "";

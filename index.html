@@ -19,20 +19,24 @@
                 <button class="main-nav__toggle" type="button">Закрыть меню</button>
                 <ul class="main-nav__list">
                     <li class="main-nav__item  main-nav__item--logo">
-                        <picture>
-                            <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
-                            <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
-                            <img src="img/mishka-logo-mobile.svg" alt="Mishka">
-                        </picture>
+                        <a href="index.html">
+                            <picture>
+                                <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
+                                <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
+                                <img src="img/mishka-logo-mobile.svg" alt="Mishka">
+                            </picture>
+                        </a>
                     </li>
                     <li class="main-nav__item  main-nav__item-li-catalog"><a class="main-nav__item--catalog-item" href="#"><b class="main-nav__item--catalog">Каталог товаров</b></a></li>
-                    <li class="main-nav__item  main-nav__item-li-order"><a href="#"><b class="main-nav__item--order">Вязание на заказ</b></a></li>
+                    <li class="main-nav__item  main-nav__item-li-order"><a class="main-nav__item--order-item" href="#"><b class="main-nav__item--order">Вязание на заказ</b></a></li>
                     <li class="main-nav__item  main-nav__item-li-search"><a class=" main-nav__item--search-item" href="#"><b class="main-nav__item--search">Поиск по сайту</b></a></li>
                     <li class="main-nav__item  main-nav__item-li-basket"><a class=" main-nav__item--basket-item" href="#"><b class="main-nav__item--basket">Корзина: пока пуста</b></a></li>
                 </ul>
-                
+
                 <!--<button class="page-header__toggle" type="button">Закрыть/открыть меню</button>-->
             </nav>
+            <a class="main-nav__text-bold  main-nav__text-bold--receipts" href="#">Новые поступления</a>
+            <a class="main-nav__text-bold  main-nav__text-bold--sale" href="#">Распродажа</a>
             <p class="main-nav__text">Бесплатная доставка по России</p>
             <div class="page-header__logo">
                 <button class="page-header__toggle" type="button">Закрыть/открыть меню</button>
@@ -46,26 +50,30 @@
     </header>
 
     <div class="introduce">
-        <div class="introduce__wrapper">
-            <h3 class="introduce__title">Милые штуки ручной работы для дома</h3>
+        <div class="introduce__image">
+            <div class="introduce__wrapper">
+                <h3 class="introduce__title">Милые штуки ручной<br> работы для дома</h3>
+            </div>
         </div>
     </div>
     <div class="catalog-navigation">
         <div class="catalog-navigation__wrapper">
-            <div class="catalog-navigation__item">
-                <p class="catalog-navigation__text">Предметы интерьера</p>
+            <div class="catalog-navigation__item  catalog-navigation__item--interior">
+                <p class="catalog-navigation__text">Предметы<br> интерьера</p>
             </div>
-            <div class="catalog-navigation__item">
-                <p class="catalog-navigation__text">Детские игрушки</p>
+            <div class="catalog-navigation__item  catalog-navigation__item--toys">
+                <p class="catalog-navigation__text">Детские<br> игрушки</p>
             </div>
         </div>
+        <div class="catalog-navigation__zigzag"></div>
     </div>
 
-    <div class="featured">
+    <div class="featured  container">
         <div class="featured__wrapper">
             <h2 class="featured__title">Вязаные корзинки</h2>
             <h3 class="featured__catchy-text">Товар недели</h3>
-            <p class="featured__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+            <p class="featured__text  featured__text--mobile-only">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+            <p class="featured__text  featured__text--tablet-desktop">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
             <table class="featured__table">
                 <tr class="featured__table-tr">
                     <td class="featured__table-td">Цвет:</td>
@@ -80,7 +88,13 @@
                     <td class="featured__table-td">15 см</td>
                 </tr>
             </table>
-            <div class="featured__photo"></div>
+            <div class="featured__photo">
+                    <picture>
+                            <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
+                            <source media="(min-width: 768px)" srcset="img/featured-tablet.png 1x, img/featured-tablet@2x.png 2x">
+                            <img src="img/featured-mobile.png 1x"  srcset="img/featured-tablet.png 1x, img/featured-tablet@2x.png 2x" alt="Featured">
+                        </picture>
+            </div>
             <p class="featured__price-text">Цена: 990 руб.</p>
             <button class="btn  btn--featured" type="button">Заказать</button>
         </div>
