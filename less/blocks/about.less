@@ -1,3 +1,140 @@
 .about {
     background-color: #dad;
+    margin: auto;
+
+    &__title {
+        font-family: "Verdana Bold";
+        font-size: 24px;
+        line-height: 30px;
+        margin-left: -2px;
+        margin-bottom: 26px;
+
+        &--reviews {
+            margin-top: 31px;
+        }
+    }
+
+    &__items-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item {
+        font-family: "Verdana Bold";
+        font-size: 16px;
+        line-height: 20.8px;
+        position: relative;
+        height: 123px;
+        background-color: #add;
+        box-sizing: border-box;
+        padding-top: 57px;
+        width: 100%;
+
+        &::before {
+            content: "";
+            position: absolute;
+            display: block;
+            left: 0;
+            top: 0;
+            height: 47px;
+            width: 57px;
+            background-color: #fff;
+        }
+
+        &--flower::before {
+            background-image: url("../img/sprite.svg");
+            background-position: -242px -11px;
+        }
+
+        &--flag::before {
+            background-image: url("../img/sprite.svg");
+            background-position: -88px -90px;
+        }
+
+        &--heart::before {
+            background-image: url("../img/sprite.svg");
+            background-position: -161px -85px;
+        }
+
+        &--ball::before {
+            background-image: url("../img/sprite.svg");
+            background-position: -225px -88px;
+        }
+
+        &--rocket::before {
+            background-image: url("../img/sprite.svg");
+            background-position: -17px -87px;
+            margin-left: -7px;
+        }
+
+        &--present::before {
+            background-image: url("../img/sprite.svg");
+            background-position: -192px -9px;
+        }
+    }
+
+    &__item:nth-child(2n) {
+        background-color: #689C9C;
+    }
+
+    &__text {
+        letter-spacing: 0.33px;
+    }
+
+    &__name {
+        font-family: "Verdana Bold";
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 19px;
+        margin-bottom: 6px;
+    }
+
+    &__mail {
+        margin-top: 1px;
+    }
+
+    &__page-controller {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__radio {
+        display: none;
+    }
+
+    &__radio-item--prev {
+        font-size: 0;
+        display: inline-block;
+        position: relative;
+
+        &::after{
+            content: "";
+            position: absolute;
+            height: 50px;
+            width: 125px;
+            top: 0;
+            left: 0;
+            background-color: #add;
+            border: 1px solid @color-border-main-nav;
+        }
+    }
+
+    &__radio-item--next {
+        font-size: 0;
+        display: inline-block;
+        position: relative;
+
+        &::after{
+            content: "";
+            position: absolute;
+            height: 50px;
+            width: 125px;
+            top: 0;
+            right: 0;
+            background-color: #add;
+            border: 1px solid @color-border-main-nav;
+            border-left: none;
+        }
+    }
 }

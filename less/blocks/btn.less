@@ -9,10 +9,38 @@
     letter-spacing: 1.1px;
     font-weight: 900;
     padding-bottom: 3px;
+    background-color: #fff;
+    cursor: pointer;
+    outline: none;
 
     &--featured {
-        min-width: 253px;
-        width: 100%;
-        margin-top: 10px;
+        max-width: 430px;
+        min-width: 260px;
+        width: 80%;
+        margin: auto;
+    }
+
+    &:hover {
+        background-color: @color-text;
+        color: #fff;
+    }
+
+    &:active {
+        color: @color-btn-text-active;
     }
 }
+
+@media @tablet-width {
+    .btn {
+        &--featured {
+            max-width: 450px;
+            min-width: 260px;
+            width: 100%;
+            margin: auto;
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+    }
+}
+
+//img/featured-mobile.png 1x, img/featured-mobile@2x.png 2x
