@@ -1,6 +1,7 @@
 .about {
-    background-color: #dad;
+    background-color: #fff;
     margin: auto;
+    margin-bottom: 10px;
 
     &__title {
         font-family: "Verdana Bold";
@@ -19,13 +20,17 @@
         flex-direction: column;
     }
 
+    &__column-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
     &__item {
         font-family: "Verdana Bold";
         font-size: 16px;
         line-height: 20.8px;
         position: relative;
         height: 123px;
-        background-color: #add;
         box-sizing: border-box;
         padding-top: 57px;
         width: 100%;
@@ -38,7 +43,7 @@
             top: 0;
             height: 47px;
             width: 57px;
-            background-color: #fff;
+            background-color: transparent;
         }
 
         &--flower::before {
@@ -73,10 +78,6 @@
         }
     }
 
-    &__item:nth-child(2n) {
-        background-color: #689C9C;
-    }
-
     &__text {
         letter-spacing: 0.33px;
     }
@@ -106,35 +107,221 @@
     &__radio-item--prev {
         font-size: 0;
         display: inline-block;
-        position: relative;
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        width: 50%;
+        cursor: pointer;
 
         &::after{
+            border: 1px solid @color-border-main-nav;
+            left: 0;
+            min-width: 125px;
             content: "";
             position: absolute;
             height: 50px;
-            width: 125px;
+            width: 100%;
             top: 0;
-            left: 0;
-            background-color: #add;
-            border: 1px solid @color-border-main-nav;
+            background-image: url("../img/arrows.svg");
+            background-position-y: -30px;
+            background-repeat: no-repeat;
+            background-position-x: center;
+        }
+
+        &:hover::after {
+            opacity: 0.6;
+        }
+
+        &:active::after {
+            opacity: 0.3;
         }
     }
 
     &__radio-item--next {
         font-size: 0;
         display: inline-block;
-        position: relative;
+        width: 50%;
+        position: absolute;
+        content: "";
+        right: 0;
+        top: 0;
+        cursor: pointer;
 
         &::after{
+            border: 1px solid @color-border-main-nav;
+            left: 0;
+            min-width: 125px;
             content: "";
             position: absolute;
             height: 50px;
-            width: 125px;
+            width: 100%;
             top: 0;
-            right: 0;
-            background-color: #add;
-            border: 1px solid @color-border-main-nav;
-            border-left: none;
+            background-image: url("../img/arrows.svg");
+            background-position-y: -84px;
+            background-repeat: no-repeat;
+            background-position-x: center;
+        }
+
+        &:hover::after {
+            opacity: 0.6;
+        }
+
+        &:active::after {
+            opacity: 0.3;
+        }
+    }
+
+    .page-controller {
+        &__wrapper {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            margin-top: 13px;
+            margin-bottom: 90px;
+        }
+    }
+}
+
+@media @tablet-width {
+    .about.container {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .about {
+        &__title {
+            font-size: 40px;
+            line-height: 50px;
+            margin-left: -4px;
+            letter-spacing: -0.3px;
+            margin-bottom: 47px;
+        }
+
+        &__items-wrapper {
+            width: 100%;
+            flex-direction: row;
+        }
+
+        &__column-wrapper {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+        }
+
+        &__item {
+            width: 100%;
+            font-size: 20px;
+            line-height: 25px;
+            margin-bottom: 32px;
+        }
+
+        &__title-btn-wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+            //
+        }
+
+        &__slider-wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        &__background-image {
+            background-image: url("../img/review@2x.png");
+            background-size: 351px auto;
+            background-repeat: no-repeat;
+            height: 458px;
+            margin-left: -50px;
+            margin-top: 30px;
+        }
+
+        &__reviews-wrapper {
+            margin-top: -414px;
+            margin-bottom: 84px;
+        }
+
+        &__text {
+            letter-spacing: 1.35px;
+            margin-top: 5px;
+            margin-bottom: -8px;
+        }
+
+        &__name {
+            font-size: 16px;
+        }
+
+        &__mail {
+            letter-spacing: 1.2px;
+        }
+
+        &__radio-item {
+            width: 88px;
+        }
+
+        &__radio-item--next,
+        &__radio-item--prev {  
+            &::after{
+                border: none;
+                min-width: none;
+            }
+        }
+
+        .page-controller {
+            &__wrapper {
+                width: 176px;
+                margin-right: 18px;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+@media @desktop-width {
+    .about {
+        &__title {
+            font-size: 50px;
+            line-height: 57px;
+            margin-left: 172px;
+            margin-top: 44px;
+            margin-bottom: 45px;
+        }
+
+        &__item {
+            width: 350px;
+        }
+
+        &__items-wrapper {
+            margin: auto;
+            width: 700px;
+            margin-bottom: 39px;
+        }
+
+        &__column-wrapper {
+            width: 350px;
+        }
+
+        &__background-image {
+            margin-left: 0px;
+        }
+
+        &__reviews-wrapper {
+            margin-top: -434px;
+        }
+
+        &__text {
+            margin-left: 176px;
+            margin-right: 170px;
+            margin-top: 4px;
+        }
+
+        &__slider-wrapper {
+            margin-left: 175px;
+            margin-top: 1px;
         }
     }
 }

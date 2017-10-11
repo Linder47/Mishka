@@ -14,10 +14,23 @@
     outline: none;
 
     &--featured {
-        max-width: 430px;
         min-width: 260px;
-        width: 80%;
+        width: 100%;
         margin: auto;
+    }
+
+    &--about {
+        min-width: 260px;
+        width: 100%;
+        margin: auto;
+
+        &-tablet-desktop {
+            display: none;
+        }
+    }
+
+    &--contacts {
+        width: 100%;
     }
 
     &:hover {
@@ -39,6 +52,35 @@
             margin: auto;
             padding-right: 0px;
             padding-left: 0px;
+        }
+
+        &--about {
+            &-tablet-desktop {
+                display: inline-block;
+                margin-top: 36px;
+                margin-right: 0;
+                width: 175px;
+                min-width: 150px;
+            }
+
+            &-mobile {
+                display: none;
+            }
+        }
+
+        &--contacts {
+            width: 230px;
+            margin: auto;
+        }
+    }
+}
+
+@media @desktop-width {
+    .btn {
+        &--about {
+            &-tablet-desktop {
+                margin-top: 54px;
+            }
         }
     }
 }
