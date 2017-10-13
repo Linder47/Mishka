@@ -11,35 +11,18 @@
         box-sizing: border-box;   
         padding-top: 25px;   
         cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
 
         &--interior {
             background-color: @color-interior;
             margin-top: -74px;
             position: relative;
 
-            &::after {
-                content: "";
-                position: absolute;
-                top: 22px;
-                right: 36px;
-                width: 42px;
-                height: 64px;
-                background-image: url(../img/sprite.svg);
-                background-position: -51px -13px;
-                opacity: 0.5;
-            }
-
             &:hover {
                 height: 108px;
                 margin-top: -79px;
-            }
-
-            &:hover::after {
-                opacity: 0.7;
-            }
-
-            &:active::after {
-                opacity: 0.3;
             }
         }
 
@@ -47,29 +30,9 @@
             background-color: @color-toys;
             position: relative;
 
-            &::after {
-                content: "";
-                position: absolute;
-                top: 20px;
-                right: 26px;
-                width: 62px;
-                height: 62px;
-                background-image: url(../img/sprite.svg);
-                background-position: 198px -15px;
-                opacity: 0.5;
-            }
-
             &:hover {
                 height: 108px;
                 margin-top: -5px;
-            }
-
-            &:hover::after {
-                opacity: 0.7;
-            }
-
-            &:active::after {
-                opacity: 0.3;
             }
         }
     }
@@ -81,18 +44,40 @@
         line-height: 24px;
         color: #fff;
     }
+
+    &__svg {
+        fill: #3bb09d;
+    }
 }
 
-.catalog-navigation__item--interior:active ~ .catalog-navigation__text {
+.catalog-navigation__item:hover  .catalog-navigation__svg {
+    fill: #29a592;
+}
+
+.catalog-navigation__item:active  .catalog-navigation__svg {
+    fill: #44c0aa;
+}
+
+.catalog-navigation__item:active  .catalog-navigation__text {
     opacity: 0.3;
 }
+
+.interior {
+    margin-right: 36px;
+    margin-top: -2px;
+}
+
+.toy-svg {
+    margin-right: 27px;
+    margin-top: -4px;
+}
+
 
 @media @tablet-width {
     .catalog-navigation {
         &__wrapper {
             flex-direction: row;
             justify-content: center;
-            //justify-content: space-between;
         }
 
         &__item {

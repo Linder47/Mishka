@@ -16,11 +16,21 @@
         border-top: 1px solid @color-border-main-nav;
         border-bottom: 1px solid @color-border-main-nav;
         padding-top: 10px;
+        padding-bottom: 11px;
         box-sizing: border-box;
     }
 
-    &__logo picture {
+    &__logo svg {
         margin: auto;
+        opacity: 100%;
+    
+        &:hover {
+            opacity: 60%;
+        }
+
+        &:active {
+            opacity: 30%;
+        }
     }
 
     &__toggle {

@@ -5,7 +5,7 @@ function initMap() {
       center: coordinates
     }),
   
-    markerImage = "img/map-pin.svg",
+    markerImage = "img/icon-map-pin.svg",
     marker = new google.maps.Marker({
         position: coordinates,
         map: map,

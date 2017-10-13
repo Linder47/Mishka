@@ -27,14 +27,7 @@
             border-top: 1px solid @color-border-main-nav;
             display: flex;
             width: 100%;
-
-            &:hover {
-                opacity: 0.6;
-            }
-
-            &:active {
-                opacity: 0.3;
-            }
+            cursor: pointer;
 
         &--logo {
                 padding-top: 4px;
@@ -56,72 +49,11 @@
 
         &--search {
                 margin-left: -28px;
-
-            &-item {
-                    position: relative;
-                    //background-color: #dad;
-
-                 &::before {
-                        position: absolute;
-                        content: "";
-                        height: 23px;
-                        width: 23px;
-                        background: url("../img/sprite.svg");
-                        top: 2px;
-                        left: -75px;
-                        background-position: -15px 279px;
-                        opacity: 0.2;
-                        display: inline-block;
-                }
-
-                &:hover::before {
-                    opacity: 1;
-                    background: url("../img/sprite2.svg");
-                    background-position: -15px 272px;
-                }
-
-                &:active::before {
-                    opacity: 0.3;
-                }
-
-                /*&:hover b {
-                    opacity: 0.6;
-                }*/
-            }
+                position: relative;
         }
 
         &--basket {
-                margin-left: 19px;
-
-            &-item {
-                    position: relative;
-
-                    & b {
-                        padding-right: 0px;
-                    }
-
-                &::before {
-                        position: absolute;
-                        content: "";
-                        height: 23px;
-                        width: 23px;
-                        background: url("../img/sprite.svg");
-                        top: 2px;
-                        left: -25px;
-                        background-position: -19px 244px;
-                        opacity: 0.2;
-                }
-
-                &:hover::before {
-                    opacity: 1;
-                    background: url("../img/sprite2.svg");
-                    background-position: -58px 273px;
-                }
-
-                &:active::before {
-                    opacity: 0.3;
-                }
-            }
+                margin-left: 19px;     
         }
     }
 
@@ -176,6 +108,51 @@
     }
 }
 
+.main-nav--basket-svg,
+.main-nav--search-svg {
+    fill: #d3d2d2;
+}
+
+.main-nav__item-li-basket:hover .main-nav--basket-svg,
+.main-nav__item-li-search:hover .main-nav--search-svg {
+    fill: #63d1bb;
+}
+
+.main-nav__item-li-basket:active .main-nav--basket-svg,
+.main-nav__item-li-search:active .main-nav--search-svg {
+    fill: #d0f1ea;
+}
+
+.main-nav__item:hover  .main-nav__item-b  {
+    opacity: 0.6;
+}
+
+.main-nav__item:active  .main-nav__item-b  {
+    opacity: 0.3;
+}
+
+.main-nav__item-li-search,
+.main-nav__item-li-basket {
+    position: relative;
+    display: flex;
+}
+
+.main-nav--search-svg,
+.main-nav--basket-svg {
+    position: absolute;
+    content: "";
+    left: 32px;
+    bottom: 30px;
+    opacity: 20%;
+}
+
+.main-nav__item:hover  picture {
+    opacity: 0.6;
+}
+
+.main-nav__item:active  picture {
+    opacity: 0.3;
+}
 
 @media @tablet-width {
     .main-nav {
@@ -214,8 +191,8 @@
                 &-item {
                     position: relative;
 
-                    &::before {
-                            position: absolute;
+                    /*&::before {
+                            /position: absolute;
                             content: "";
                             height: 23px;
                             width: 23px;
@@ -223,7 +200,7 @@
                             top: 2px;
                             left: -13px;
                             background-position: -15px 279px;
-                    }
+                    }*/
                 }
             }
 

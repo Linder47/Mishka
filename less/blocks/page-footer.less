@@ -9,8 +9,13 @@
         display: flex;  
         
         &-wrapper {
-            margin: auto;
             padding-bottom: 9px;
+            margin-top: 23px;
+            display: flex;
+            align-items: baseline;
+            margin: auto;
+            padding-top: 14px;
+            padding-left: 6px;
         }
     }
 
@@ -23,6 +28,18 @@
     &__logo {
         display: none;
     }
+
+    &__logo-svg {
+        fill: #000;
+    }
+}
+
+.page-footer__logo:hover  .page-footer__logo-svg {
+    fill: #46c1ae;
+}
+
+.page-footer__logo:active  .page-footer__logo-svg {
+    fill: #bde3dd;
 }
 
 .social-link {
@@ -31,54 +48,22 @@
     height: 30px;
     display: inline-block;
 
-    &--vk {
-        background-image: url("../img/sprite2.svg");
-        background-position: -238px -13px;
-        height: 30px;
-        width: 30px;
-        margin-right: 28px;
-
-        &:hover {
-            background-position: -267px -71px;
-        }
-
-        &:active {
-            opacity: 0.3;
-        }
-    }
-
     &--fb {
-        background-image: url("../img/sprite2.svg");
-        background-position: -280px -19px;        
-        height: 30px;
-        width: 30px;
-        margin-right: 16px;
-
-        &:hover {
-            background-position: -309px -70px;
-        }
-
-        &:active {
-            opacity: 0.3;
-        }
+        margin-right: 21px;
+        margin-left: 32px;
     }
 
-    &--tw {
-        background-image: url("../img/sprite2.svg");
-        background-position: -322px -16px;
-        height: 30px;
-        width: 30px;
-        margin-left: 10px;
-        margin-right: 6px;
-
-        &:hover {
-            background-position: -351px -67px;
-        }
-
-        &:active {
-            opacity: 0.3;
-        }
+    &__svg {
+        fill: #221f1f;
     }
+}
+
+.social-link:hover  .social-link__svg {
+    fill: #46c1ae;
+}
+
+.social-link:active  .social-link__svg {
+    fill: #bde3dd;
 }
 
 .hashtag {
@@ -91,14 +76,9 @@
     }
 
     &__link {
-        background-image: url("../img/sprite2.svg");
-        background-position: -273px -128px;
-        height: 38px;
-        width: 31px;
         margin-left: 10px;
         margin-right: 6px;
         margin: auto;
-        opacity: 0.6;
         font-size: 0;
 
         &:hover {
@@ -114,8 +94,22 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
+        padding-top: 11px;
         margin: auto;
+        cursor: pointer;
     }
+
+    &__svg {
+        fill: #63d1bb;
+    }
+}
+
+.hashtag__wrapper:hover  .hashtag__svg {
+    fill: #46c1ae;
+}
+
+.hashtag__wrapper:active  .hashtag__svg {
+    fill: #bde3dd;
 }
 
 @media @tablet-width {
@@ -145,19 +139,10 @@
 
         &__logo {
             display: inline-block;
-            background-image: url("../img/sprite2.svg");
-            background-position: -273px -128px;
-            height: 38px;
-            width: 106px;
-            background-position: -142px -119px;
-            margin-top: 18px;
-            margin-left: -3px;
+            margin-top: 20px;
+            margin-left: -1px;
             font-size: 0;
 
-            &:hover {
-                background-position: -142px -63px;
-            }
-    
             &:active {
                 opacity: 0.3;
             }
@@ -172,6 +157,10 @@
         &__link {
             margin-top: 11px;
             margin-right: -2px;
+        }
+
+        &___wrapper {
+            margin-right: 3px;
         }
     }
 }
