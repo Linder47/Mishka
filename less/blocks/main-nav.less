@@ -3,6 +3,12 @@
 }
 
 .main-nav {
+    display: block;
+
+    &--close {
+        display: none;
+    }
+
     &__list {
         padding: 0;
         margin: 0;
@@ -29,6 +35,10 @@
             width: 100%;
             cursor: pointer;
 
+            &--catalog-page {
+                height: 78px;
+            }
+
         &--logo {
                 padding-top: 4px;
                 position: relative;
@@ -48,8 +58,9 @@
         }
 
         &--search {
-                margin-left: -28px;
-                position: relative;
+            &-item b {
+                margin-left: -30px;
+            }
         }
 
         &--basket {
@@ -152,6 +163,10 @@
 
 .main-nav__item:active  picture {
     opacity: 0.3;
+}
+
+.main-nav__item--logo.main-nav__item--catalog {
+    padding-top: 0;
 }
 
 @media @tablet-width {
