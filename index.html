@@ -249,14 +249,14 @@
                         <b class="about__item  about__item--ball">Связано вручную с<br>
                         любовью и умилением</b>
                     </div>
-                    <div class="about__item--wrapper">
+                    <div class="about__item--wrapper  about__item--rocket">
                         <svg class="mishka-icon-about  mishka-icon-about--rocket" width="55" height="23">
                             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-feature-4"></use>
                         </svg>
                         <b class="about__item  about__item--rocket">Поддержка отечественного<br>
                          производителя</b>
                     </div>
-                    <div class="about__item--wrapper">
+                    <div class="about__item--wrapper  about__item--present">
                         <svg class="mishka-icon-about  mishka-icon-about--present" width="33" height="32">
                             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-feature-6"></use>
                         </svg>
@@ -271,34 +271,97 @@
                     <h2 class="about__title  about__title--reviews">Отзывы</h2>
                     <button class="btn  btn--about  btn--about-tablet-desktop">Написать</button>
                 </div>
-                <p class="about__text">Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек.
-                    В отчаянии, я накупила аксессуаров и игрушек в Мишке и мои фотографии сразу стали более стильнее, а также
-                    набирают больше лайков!</p>
-                <div class="about__slider-wrapper">
-                    <div class="about__name-wrapper">
-                        <p class="about__name">Анастасия Красильникова</p>
-                        <p class="about__mail">@misssssiskras</p>
-                    </div>
-                    <div class="about__slider-radio-wrapper">
-                        <div class="about__page-controller">
-                            <input class="about__radio  about__radio--prev" type="radio" name="about__radio" id="about__radio--prev">
-                            <input class="about__radio  about__radio--next" type="radio" name="about__radio" id="about__radio--next">
-                            <div class="page-controller__wrapper">
-                                <label class="about__radio-item  about__radio-item--prev" for="about__radio--prev">
-                                        <svg class="about-arrow-svg  about-arrow-svg--left" width="50" height="26">
-                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-left-arrow"></use>
-                                            </svg>Prev</label>
-                                <label class="about__radio-item  about__radio-item--next" for="about__radio--next">
-                                        <svg class="about-arrow-svg  about-arrow-svg--right" width="50" height="26">
-                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-right-arrow"></use>
-                                            </svg>Next</label>
+                <label class="about__toggle-item" for="about__slider-1-1"></label>
+                <label class="about__toggle-item" for="about__slider-1-2"></label>
+                <label class="about__toggle-item" for="about__slider-1-3"></label>
+
+                <div class="about__slider">
+                    <input class="about__radio  about__slider-1-1" type="radio" name="about__radio" id="about__slider-1-1" checked>
+                    <div class="about__content  about__content--first">
+                        <p class="about__text">Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных
+                            инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке и мои фотографии сразу стали
+                            более стильнее, а также набирают больше лайков!</p>
+                        <div class="about__slider-wrapper">
+                            <div class="about__name-wrapper">
+                                <p class="about__name">Анастасия Красильникова</p>
+                                <p class="about__mail">@misssssiskras</p>
                             </div>
                         </div>
                     </div>
+                    <div class="about__page-controller  about__page-controller--first">
+                        <div class="page-controller__wrapper">
+                            <label class="about__radio-item  about__radio-item--prev" for="">
+                                <svg class="about-arrow-svg  about-arrow-svg--left  about-arrow-svg--invalid" width="50" height="26">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-left-arrow"></use>
+                                 </svg>
+                                </label>
+                            <label class="about__radio-item  about__radio-item--next" for="about__slider-1-2">
+                                    <svg class="about-arrow-svg  about-arrow-svg--right" width="50" height="26">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-right-arrow"></use>
+                                        </svg>
+                            </label>
+                        </div>
+                    </div>
+
+                    <input class="about__radio  about__slider-1-2" type="radio" name="about__radio" id="about__slider-1-2">
+                    <div class="about__content  about__content--second">
+                        <p class="about__text">Мишка Тедди — это собирательное название для всех игрушек, изготовленных по особой технологии, чье
+                            происхождение окутано тайной. По одной из версий, первые мишки Тедди ручной работы были созданы
+                            простой немецкой девушкой — Маргарет Штайн. </p>
+                        <div class="about__slider-wrapper">
+                            <div class="about__name-wrapper">
+                                <p class="about__name">Олеся Иванова</p>
+                                <p class="about__mail">@o_iva</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__page-controller  about__page-controller--second">
+                        <div class="page-controller__wrapper">
+                            <label class="about__radio-item  about__radio-item--prev" for="about__slider-1-1">
+                                        <svg class="about-arrow-svg  about-arrow-svg--left" width="50" height="26">
+                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-left-arrow"></use>
+                                             </svg>
+                                </label>
+                            <label class="about__radio-item  about__radio-item--next" for="about__slider-1-3">
+                                        <svg class="about-arrow-svg  about-arrow-svg--right" width="50" height="26">
+                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-right-arrow"></use>
+                                            </svg>
+                                </label>
+                        </div>
+                    </div>
+
+
+                    <input class="about__radio  about__slider-1-3" type="radio" name="about__radio" id="about__slider-1-3">
+                    <div class="about__content  about__content--third">
+                        <p class="about__text">По другой версии, президент США Теодор Рузвельт во время охоты отказался убить медвежонка, и, услышав
+                            об этом, владельцы нью-йоркского магазина игрушек Моррис и Роуз Мичтом вдохновились на создание
+                            хенд мейд медведя. Ну, а теперь делаем так, чтобы слайды наконец-то переключались:</p>
+                        <div class="about__slider-wrapper">
+                            <div class="about__name-wrapper">
+                                <p class="about__name">Анна Викторова</p>
+                                <p class="about__mail">@annvi77</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__page-controller  about__page-controller--third">
+                        <div class="page-controller__wrapper">
+                            <label class="about__radio-item  about__radio-item--prev" for="about__slider-1-2">
+                                    <svg class="about-arrow-svg  about-arrow-svg--left" width="50" height="26">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-left-arrow"></use>
+                                         </svg>
+                            </label>
+                            <label class="about__radio-item  about__radio-item--next">
+                                    <svg class="about-arrow-svg  about-arrow-svg--right  about-arrow-svg--invalid" width="50" height="26">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-right-arrow"></use>
+                                        </svg>
+                            </label>
+                        </div>
+                    </div>
                 </div>
-                <button class="btn  btn--about  btn--about-mobile">Написать</button>
             </div>
+            <button class="btn  btn--about  btn--about-mobile">Написать</button>
         </div>
+    </div>
     </div>
 
     <div class="zigzag2  zigzag2--after-about"></div>

@@ -35,6 +35,13 @@
         margin-bottom: 39px;
         display: flex;
     }
+
+    &__flag {
+        &--tablet,
+        &--desktop {
+        display: none;
+        }
+    }
 }
 
 @media @tablet-width {
@@ -62,6 +69,10 @@
         }
 
         &__flag {
+            &--tablet {
+                display: table;
+            }
+            
             background-position: -27px -185px;
             height: 85px;
             width: 51px;
