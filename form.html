@@ -93,8 +93,8 @@
                             </picture>
                         </a>
                     </li>
-                    <li class="main-nav__item  main-nav__item--catalog-page  main-nav__item-li-catalog"><a class="main-nav__item--catalog-item"><b class="main-nav__item-b  main-nav__item--catalog">Каталог товаров</b></a></li>
-                    <li class="main-nav__item  main-nav__item--catalog-page  main-nav__item-li-order"><a class="main-nav__item--order-item" href="form.html"><b class="main-nav__item-b  main-nav__item--order">Вязание на заказ</b></a></li>
+                    <li class="main-nav__item  main-nav__item--catalog-page  main-nav__item-li-catalog"><a class="main-nav__item--catalog-item" href="catalog.html"><b class="main-nav__item-b  main-nav__item--catalog">Каталог товаров</b></a></li>
+                    <li class="main-nav__item  main-nav__item--catalog-page  main-nav__item-li-order"><a class="main-nav__item--order-item"><b class="main-nav__item-b  main-nav__item--order">Вязание на заказ</b></a></li>
                     <li class="main-nav__item  main-nav__item--catalog-page  main-nav__item-li-search">
                         <svg class="main-nav--search-svg" width="18" height="18">
                             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search"></use>
@@ -122,125 +122,114 @@
         </div>
     </header>
 
-    <div class="page-name">
+    <div class="page-name  page-name--form">
         <div class="page-name__wrapper  container">
-            <h1 class="page-name__text">Каталог товаров</h1>
+            <h1 class="page-name__text  page-name__text--form">Вязание на заказ</h1>
         </div>
     </div>
 
     <div class="page-name__zigzag"></div>
 
-    <div class="catalog  container">
-        <div class="catalog-item__wrapper">
-            <div class="catalog-item__item">
-                <div class="catalog-item__image">
-                    <picture>
-                        <source media="(min-width: 1150px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
-                        <source media="(min-width: 450px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
-                        <img src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile.jpg 1x, img/photo-1-mobile@2x.jpg 2x" alt="photo-1">
-                    </picture>
-                </div>
-                <div class="catalog-item__description">
-                    <div class="catalog-item__name-wrapper">
-                        <a class="catalog-item__name-link" href="#">
-                            <h3 class="catalog-item__item-name">Зайчик-попрыгайчик</h3>
-                        </a>
-                        <p class="catalog-item__item-options">Рост 30 см, вес 200 г</p>
+    <form class="order-form" method="post" action="form.html">
+        <div class="order-form__wrapper">
+            <p class="order-form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа, и мы свяжемся с вами, чтобы уточнить
+                детали.
+            </p>
+            <div class="order-form__wrapper">
+                <fieldset class="order-form__block  order-form__block--type-radio">
+                    <legend class="order-form__block-title">Тип</legend>
+                    <div class="order-form__element--wrapper">
+                        <input id="interior" name="order-type" type="radio" value="interior" checked>
+                        <label class="order-form__radio-label" for="interior">Аксессуар для интерьера</label>
                     </div>
-                    <div class="catalog-item__price-wrapper">
-                        <a class="catalog-item__price-link" href="#"><b class="catalog-item__price">1 200 руб.</b></a>
-                        <svg class="catalog-item__icon-cart-svg" width="21" height="18">
-                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use>
-                        </svg>
+                    <div class="order-form__element--wrapper">
+                        <input id="toy" name="order-type" type="radio" value="toy">
+                        <label class="order-form__radio-label" for="toy">Детская игрушка</label>
                     </div>
-                </div>
+                </fieldset>
             </div>
 
-            <div class="catalog-item__item">
-                <div class="catalog-item__image">
-                    <picture>
-                        <source media="(min-width: 1150px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
-                        <source media="(min-width: 450px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
-                        <img src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile.jpg 1x, img/photo-2-mobile@2x.jpg 2x" alt="photo-2">
-                    </picture>
-                </div>
-                <div class="catalog-item__description">
-                    <div class="catalog-item__name-wrapper">
-                        <a class="catalog-item__name-link" href="#">
-                            <h3 class="catalog-item__item-name">Корзинка для белья</h3>
-                        </a>
-                        <p class="catalog-item__item-options">Диаметр 15 см, высота 10 см</p>
+            <div class="order-form__wrapper  order-form__wrapper--grey">
+                <fieldset class="order-form__block  order-form__block--color-checkbox">
+                    <legend class="order-form__block-title">Цвет</legend>
+                    <div class="order-form__element--wrapper">
+                        <input id="white" name="color" type="checkbox" value="white" checked>
+                        <label class="order-form__checkbox-label" for="white">Белый</label>
                     </div>
-                    <div class="catalog-item__price-wrapper">
-                        <a class="catalog-item__price-link" href="#"><b class="catalog-item__price">690 руб.</b></a>
-                        <svg class="catalog-item__icon-cart-svg" width="21" height="18">
-                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use>
-                        </svg>
+                    <div class="order-form__element--wrapper">
+                        <input id="grey" name="color" type="checkbox" value="grey" checked>
+                        <label class="order-form__checkbox-label" for="grey">Серый</label>
                     </div>
-                </div>
+                    <div class="order-form__element--wrapper">
+                        <input id="tiffany" name="color" type="checkbox" value="tiffany">
+                        <label class="order-form__checkbox-label" for="tiffany">«Тиффани»</label>
+                    </div>
+                    <div class="order-form__element--wrapper">
+                        <input id="black" name="color" type="checkbox" value="black">
+                        <label class="order-form__checkbox-label" for="black">Черный</label>
+                    </div>
+                    <div class="order-form__element--wrapper">
+                        <input id="pink" name="color" type="checkbox" value="pink">
+                        <label class="order-form__checkbox-label" for="pink">Розовый</label>
+                    </div>
+                    <div class="order-form__element--wrapper">
+                        <input id="orange" name="color" type="checkbox" value="orange">
+                        <label class="order-form__checkbox-label" for="orange">Оранжевый</label>
+                    </div>
+                </fieldset>
             </div>
 
-            <div class="catalog-item__item">
-                <div class="catalog-item__image">
-                    <picture>
-                        <source media="(min-width: 1150px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
-                        <source media="(min-width: 450px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
-                        <img src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile.jpg 1x, img/photo-3-mobile@2x.jpg 2x" alt="photo-3">
-                    </picture>
-                </div>
-                <div class="catalog-item__description">
-                    <div class="catalog-item__name-wrapper">
-                        <a class="catalog-item__name-link" href="#">
-                            <h3 class="catalog-item__item-name  catalog-item__item-name--mobile-tablet">Большая корзинка для игрушек</h3>
-                        </a>
-                        <a class="catalog-item__name-link" href="#">
-                            <h3 class="catalog-item__item-name  catalog-item__item-name--desktop">Большая корзинка<br> для игрушек</h3>
-                        </a>
-                        <p class="catalog-item__item-options  catalog-item__item-options--basket-desktop">Диаметр 30 см, высота 30 см</p>
+            <div class="order-form__wrapper">
+                <fieldset class="order-form__block  order-form__block--name">
+                    <legend class="order-form__block-title">ФИО</legend>
+                    <div class="order-form__element--wrapper">
+                        <label class="order-form__text-label" for="name">Фамилия:</label>
+                        <input type="text" id="name" placeholder="Укажите фамилию" minlength="3" maxlength="30" required>
                     </div>
-                    <div class="catalog-item__price-wrapper">
-                        <a class="catalog-item__price-link" href="#"><b class="catalog-item__price">1 500 руб.</b></a>
-                        <svg class="catalog-item__icon-cart-svg" width="21" height="18">
-                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use>
-                        </svg>
+                    <div class="order-form__element--wrapper">
+                        <label class="order-form__text-label" for="name">Имя:</label>
+                        <input type="text" id="name" placeholder="Укажите имя" minlength="3" maxlength="30" required>
                     </div>
-                </div>
+                    <div class="order-form__element--wrapper">
+                        <label class="order-form__text-label" for="name">Отчество:</label>
+                        <input type="text" id="name" placeholder="Отчество, если желаете" minlength="3" maxlength="30" required>
+                    </div>
+                </fieldset>
             </div>
+
+            <div class="order-form__wrapper  order-form__wrapper--grey">
+                <fieldset class="order-form__block  order-form__block--tel">
+                    <legend class="order-form__block-title">ФИО</legend>
+                    <div class="order-form__element--wrapper  order-form__element--tel">
+                        <!--<label class="order-form__tel-label" for="tel">Тел:</label>-->
+                        <input type="tel" id="tel" placeholder="+7 XXX XX XX" minlength="10" maxlength="13" required>
+                    </div>
+                </fieldset>
+                <fieldset class="order-form__block  order-form__block--mail">
+                    <legend class="order-form__block-title">e-mail</legend>
+                    <div class="order-form__element--wrapper  order-form__element--mail">
+                        <!--<label class="order-form__mail-label" for="tel">Ваш e-mail:</label>-->
+                        <input class="order-form__tel-input--mobile" type="text" id="mail" placeholder="Ваш e-mail" minlength="8" maxlength="40" required>
+                        <input class="order-form__tel-input--tabblet-desktop" type="text" id="mail" placeholder="Мы не будем спамить, честно!" minlength="8" maxlength="40" required>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div class="order-form__wrapper">
+                    <fieldset class="order-form__block  order-form__block--textarea">
+                        <legend class="order-form__block-title">Доп</legend>
+                        <div class="order-form__element--wrapper  order-form__element--textarea">
+                            <textarea name="order-form__textarea-add" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="order-form__btn-field-wrapper">
+                    <button class="btn  btn--order-form">Заказать</button>
+                    <p class="order-form__text  order-form__text--tablet-desktop">Все поля являются обязательными</p>
+                </div>
         </div>
-
-        <div class="catalog-video__wrapper">
-            <div class="catalog-video__title-wrapper  catalog-video__title-wrapper--mobile">
-                <svg class="catalog-video__icon-video-svg" width="45" height="32">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-video"></use>
-                </svg>
-                <h3 class="catalog-video__title">Процесс производства</h3>
-            </div>
-            <div class="catalog-video__video">
-                <div class="catalog-video__video-wrapper">
-                    <picture>
-                        <source media="(min-width: 1150px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
-                        <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
-                        <img src="img/video-mobile.jpg" srcset="img/video-mobile.jpg 1x, img/video-mobile@2x.jpg 2x" alt="video">
-                    </picture>
-                </div>
-                <svg class="catalog-video__icon-play-svg" width="101" height="78">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-play"></use>
-                </svg>
-            </div>
-            <div class="catalog-video__title-description-wrapper">
-                <div class="catalog-video__title-wrapper  catalog-video__title-wrapper--tablet-desktop">
-                    <svg class="catalog-video__icon-video-svg" width="45" height="32">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-video"></use>
-                    </svg>
-                    <h3 class="catalog-video__title">Процесс производства</h3>
-                </div>
-                <div class="catalog-video__description">
-                    <p class="catalog-video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-                    <button class="btn  btn--catalog-video">Сделать заказ</button>
-                </div>
-            </div>
-        </div>
-    </div>
+    </form>
 
     <footer class="page-footer">
         <div class="page-footer__wrapper  container">
