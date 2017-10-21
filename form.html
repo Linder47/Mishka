@@ -142,7 +142,7 @@
     <div class="page-name__zigzag"></div>
 
     <form class="order-form" method="post" action="form.html">
-        <div class="order-form__wrapper">
+        <div class="order-form__wrapper  order-form__wrapper--big">
             <p class="order-form__text  order-form__text--mobile">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа, и мы свяжемся с вами, чтобы уточнить
                 детали.
             </p>
@@ -151,14 +151,12 @@
             </p>
             <div class="order-form__wrapper">
                 <fieldset class="order-form__block  order-form__block--type-radio">
-                    <div class="order-form__block-wrapper">
+                    <div class="order-form__block-wrapper  order-form__block-wrapper--type">
                         <legend class="order-form__block-title">Тип</legend>
                         <div class="order-form__content-wrapper">
-                            <div class="order-form__element-wrapper">
+                            <div class="order-form__element-wrapper  order-form__element-wrapper--interior">
                                 <input id="interior" name="order-type" type="radio" value="interior" checked>
-                                <label class="order-form__radio-label  order-form__radio-label--mobile-only" for="interior">Аксессуар для
-                                    <br> интерьера</label>
-                                <label class="order-form__radio-label  order-form__radio-label--tablet-desktop" for="interior">Аксессуар для интерьера</label>
+                                <label class="order-form__radio-label" for="interior">Аксессуар для интерьера</label>
                             </div>
                             <div class="order-form__element-wrapper">
                                 <input id="toy" name="order-type" type="radio" value="toy">
@@ -169,32 +167,32 @@
                 </fieldset>
             </div>
 
-            <div class="order-form__wrapper  order-form__wrapper--grey">
+            <div class="order-form__wrapper  order-form__wrapper--grey  order-form__wrapper--color">
                 <fieldset class="order-form__block  order-form__block--color-checkbox">
-                    <div class="order-form__block-wrapper">
+                    <div class="order-form__block-wrapper  order-form__block-wrapper--color">
                         <legend class="order-form__block-title  order-form__block-title--color">Цвет</legend>
-                        <div class="order-form__content-wrapper">
-                            <div class="order-form__element-wrapper">
+                        <div class="order-form__content-wrapper  order-form__content-wrapper--checkbox">
+                            <div class="order-form__element-wrapper  order-form__element-wrapper--checkbox">
                                 <input id="white" name="color" type="checkbox" value="white" checked>
                                 <label class="order-form__checkbox-label" for="white">Белый</label>
                             </div>
-                            <div class="order-form__element-wrapper">
+                            <div class="order-form__element-wrapper  order-form__element-wrapper--checkbox">
                                 <input id="grey" name="color" type="checkbox" value="grey" checked>
                                 <label class="order-form__checkbox-label" for="grey">Серый</label>
                             </div>
-                            <div class="order-form__element-wrapper">
+                            <div class="order-form__element-wrapper  order-form__element-wrapper--checkbox">
                                 <input id="tiffany" name="color" type="checkbox" value="tiffany">
                                 <label class="order-form__checkbox-label" for="tiffany">«Тиффани»</label>
                             </div>
-                            <div class="order-form__element-wrapper">
+                            <div class="order-form__element-wrapper  order-form__element-wrapper--checkbox">
                                 <input id="black" name="color" type="checkbox" value="black">
                                 <label class="order-form__checkbox-label" for="black">Черный</label>
                             </div>
-                            <div class="order-form__element-wrapper">
+                            <div class="order-form__element-wrapper  order-form__element-wrapper--checkbox">
                                 <input id="pink" name="color" type="checkbox" value="pink">
                                 <label class="order-form__checkbox-label" for="pink">Розовый</label>
                             </div>
-                            <div class="order-form__element-wrapper">
+                            <div class="order-form__element-wrapper  order-form__element-wrapper--checkbox">
                                 <input id="orange" name="color" type="checkbox" value="orange">
                                 <label class="order-form__checkbox-label" for="orange">Оранжевый</label>
                             </div>
@@ -205,31 +203,31 @@
 
                 <div class="order-form__wrapper">
                     <fieldset class="order-form__block  order-form__block--name">
-                        <div class="order-form__block-wrapper">
+                        <div class="order-form__block-wrapper  order-form__block-wrapper--name">
                             <legend class="order-form__block-title  order-form__block-title--name">ФИО</legend>
-                            <div class="order-form__content-wrapper">
+                            <div class="order-form__content-wrapper  order-form__content-wrapper--input">
                                 <div class="order-form__element-wrapper  order-form__element-wrapper--name">
                                     <label class="order-form__text-label" for="name">Фамилия:</label>
-                                    <input type="text" id="name" placeholder="Укажите фамилию" minlength="3" maxlength="30" required>
+                                    <input class="order-form__input-name" type="text" id="name" placeholder="Укажите фамилию" minlength="3" maxlength="30" required>
                                 </div>
                                 <div class="order-form__element-wrapper  order-form__element-wrapper--name">
                                     <label class="order-form__text-label" for="name">Имя:</label>
-                                    <input type="text" id="name" placeholder="Введите ваше имя" minlength="3" maxlength="30" required>
+                                    <input class="order-form__input-name" type="text" id="name" placeholder="Введите ваше имя" minlength="3" maxlength="30" required>
                                 </div>
                                 <div class="order-form__element-wrapper  order-form__element-wrapper--name">
                                     <label class="order-form__text-label" for="name">Отчество:</label>
-                                    <input type="text" id="name" placeholder="Отчество, если желаете" minlength="3" maxlength="30" required>
+                                    <input class="order-form__input-name" type="text" id="name" placeholder="Отчество, если желаете" minlength="3" maxlength="30" required>
                                 </div>
                             </div>
                         </div>
                     </fieldset>
                 </div>
 
-                <div class="order-form__wrapper  order-form__wrapper--grey">
+                <div class="order-form__wrapper  order-form__wrapper--grey  order-form__wrapper--tel-mail">
                     <fieldset class="order-form__block  order-form__block--tel">
-                        <div class="order-form__block-wrapper">
+                        <div class="order-form__block-wrapper  order-form__block-wrapper--tel">
                             <legend class="order-form__block-title  order-form__block-title--tel">Тел</legend>
-                            <div class="order-form__content-wrapper">
+                            <div class="order-form__content-wrapper  order-form__content-wrapper--input">
                                 <div class="order-form__element-wrapper  order-form__element-wrapper--tel">
                                     <input type="tel" id="tel" placeholder="+7 XXX XX XX" minlength="10" value="" maxlength="13" required>
                                 </div>
@@ -237,9 +235,9 @@
                         </div>
                     </fieldset>
                     <fieldset class="order-form__block  order-form__block--mail">
-                        <div class="order-form__block-wrapper">
+                        <div class="order-form__block-wrapper  order-form__block-wrapper--mail">
                             <legend class="order-form__block-title  order-form__block-title--mail">e-mail</legend>
-                            <div class="order-form__content-wrapper">
+                            <div class="order-form__content-wrapper  order-form__content-wrapper--input">
                                 <div class="order-form__element-wrapper  order-form__element-wrapper--mail">
                                     <input class="order-form__email-input--mobile" type="text" id="mail" placeholder="Ваш e-mail" minlength="8" maxlength="40"
                                         required>
@@ -255,7 +253,7 @@
                     <fieldset class="order-form__block  order-form__block--textarea">
                         <div class="order-form__block-wrapper">
                             <legend class="order-form__block-title  order-form__block-title--textarea">Доп</legend>
-                            <div class="order-form__content-wrapper">
+                            <div class="order-form__content-wrapper  order-form__content-wrapper--input">
                                 <div class="order-form__element-wrapper  order-form__element-wrapper--textarea">
                                     <textarea name="order-form__textarea-add" placeholder="Опишите все ваши пожелания к заказу"></textarea>
                                 </div>
@@ -266,7 +264,7 @@
 
                 <div class="order-form__btn-field-wrapper">
                     <button class="btn  btn--order-form">Отправить заказ</button>
-                    <p class="order-form__text  order-form__text--tablet-desktop">Все поля являются обязательными</p>
+                    <p class="order-form__text  order-form__text--tablet-desktop  order-form__text--required">Все поля являются обязательными</p>
                 </div>
                 </div>
     </form>
@@ -299,12 +297,7 @@
             </div>
             <div class="page-footer__hashtag">
                 <div class="hashtag__wrapper">
-                    <p class="hashtag__text">Разработано</p>
-                    <a class="hashtag__link" href="#">HA
-                        <svg class="hashtag__svg" width="27" height="34">
-                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-htmlacademy"></use>
-                        </svg>
-                    </a>
+                    <a class="hashtag__link" href="#">Github</a>
                 </div>
             </div>
         </div>

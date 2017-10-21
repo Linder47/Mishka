@@ -36,6 +36,7 @@
 
 .page-footer__logo:hover  .page-footer__logo-svg {
     fill: #46c1ae;
+    transition: fill 0.15s ease-out;
 }
 
 .page-footer__logo:active  .page-footer__logo-svg {
@@ -60,6 +61,7 @@
 
 .social-link:hover  .social-link__svg {
     fill: #46c1ae;
+    transition: fill 0.15s ease-out;
 }
 
 .social-link:active  .social-link__svg {
@@ -69,7 +71,7 @@
 .hashtag {
     &__text {
         font-size: 18px;
-        font-family: "Verdana Bold";
+        font-family: "OpenSans";
         margin: auto;
         margin-right: 22px;
         margin-top: 0px;        
@@ -79,10 +81,13 @@
         margin-left: 10px;
         margin-right: 6px;
         margin: auto;
-        font-size: 0;
+        font-size: 16px;
+        font-family: "Verdana Bold";
 
         &:hover {
             opacity: 1;
+            color: @color-toys;
+            transition: color 0.15s ease-out;
         }
 
         &:active {
@@ -159,8 +164,11 @@
             margin-right: -2px;
         }
 
-        &___wrapper {
+        &__wrapper {
             margin-right: 3px;
+            width: 147px;
+            padding-top: 0px;
+            padding-bottom: 4px;
         }
     }
 }
@@ -169,5 +177,11 @@
     .page-footer {
         height: 144px;
         margin-top: 47px;
+    }
+
+    .hashtag {
+        &__wrapper {
+            width: 184px;
+        }
     }
 }
